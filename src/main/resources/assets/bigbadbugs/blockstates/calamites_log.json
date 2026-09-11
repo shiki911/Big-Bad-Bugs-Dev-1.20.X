@@ -1,0 +1,14 @@
+{
+  "variants": {
+    "axis=y": { "model": "bigbadbugs:block/calamites_log"},
+    "axis=x": {
+      "model": "bigbadbugs:block/calamites_log",
+      "x":  90,
+      "y":  90
+    },
+    "axis=z": {
+      "model": "bigbadbugs:block/calamites_log",
+      "x": 90
+    }
+  }
+}

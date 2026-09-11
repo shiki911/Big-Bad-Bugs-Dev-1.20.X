@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "bigbadbugs:fossil_block",
+    "bigbadbugs:calamites_log_fossil",
+    "bigbadbugs:calamites_leaves_fossil"
+  ]
+}
