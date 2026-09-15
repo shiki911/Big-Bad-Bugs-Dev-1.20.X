@@ -31,13 +31,13 @@ public class ModCreativeModTabs {
 
 
     public static final RegistryObject<CreativeModeTab> PALEOZOIC = CREATIVE_MOD_TABS.register("paleozioc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlock.CALAMITES_WOOD.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlock.CALAMITES_PLANKS.get()))
                     .title(Component.translatable("creativetab.bigbadbugs.paleozoic"))
                     .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                         @Override
                         public void accept(CreativeModeTab.@NotNull ItemDisplayParameters pParameters, CreativeModeTab.@NotNull Output pOutput) {
                             pOutput.accept(ModBlock.CALAMITES_LOG.get());
-                            pOutput.accept(ModBlock.CALAMITES_WOOD.get());
+                            pOutput.accept(ModBlock.CALAMITES_PLANKS.get());
                         }
                     })
                     .build());

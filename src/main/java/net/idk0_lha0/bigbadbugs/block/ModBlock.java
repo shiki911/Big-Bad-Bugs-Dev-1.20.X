@@ -35,7 +35,7 @@ public class ModBlock {
             () -> new RotatedPillarBlock(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
-    public static final RegistryObject<Block> CALAMITES_WOOD = registerBlock("calamites_wood",
+    public static final RegistryObject<Block> CALAMITES_PLANKS = registerBlock("calamites_planks",
             () -> new Block(BlockBehaviour.Properties.of()
                 .strength(1f).sound(SoundType.WOOD)));
 
