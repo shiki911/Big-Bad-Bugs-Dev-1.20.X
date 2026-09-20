@@ -1,7 +1,8 @@
 package net.idk0_lha0.bigbadbugs.item;
 
 import net.idk0_lha0.bigbadbugs.BigBadBugs;
-import net.idk0_lha0.bigbadbugs.block.ModBlock;
+import net.idk0_lha0.bigbadbugs.block.ModFossilBlock;
+import net.idk0_lha0.bigbadbugs.block.ModTreeBlock;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,22 +23,39 @@ public class ModCreativeModTabs {
                         @Override
                         public void accept(CreativeModeTab.@NotNull ItemDisplayParameters pParameters, CreativeModeTab.@NotNull Output pOutput) {
                             pOutput.accept(ModItems.FOSSIL.get());
-                            pOutput.accept(ModBlock.FOSSIL_BLOCK.get());
-                            pOutput.accept(ModBlock.CALAMITES_LEAVES_FOSSIL.get());
-                            pOutput.accept(ModBlock.CALAMITES_LOG_FOSSIl.get());
+                            pOutput.accept(ModFossilBlock.FOSSIL_BLOCK.get());
+                            pOutput.accept(ModFossilBlock.CALAMITES_LEAVES_FOSSIL.get());
+                            pOutput.accept(ModFossilBlock.CALAMITES_LOG_FOSSIl.get());
                         }
                     })
                     .build());
 
 
     public static final RegistryObject<CreativeModeTab> PALEOZOIC = CREATIVE_MOD_TABS.register("paleozioc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlock.CALAMITES_PLANKS.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModTreeBlock.CALAMITES_PLANKS.get()))
                     .title(Component.translatable("creativetab.bigbadbugs.paleozoic"))
                     .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                         @Override
                         public void accept(CreativeModeTab.@NotNull ItemDisplayParameters pParameters, CreativeModeTab.@NotNull Output pOutput) {
-                            pOutput.accept(ModBlock.CALAMITES_LOG.get());
-                            pOutput.accept(ModBlock.CALAMITES_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.CALAMITES_LOG.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_LOG.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_LOG.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_LOG.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_LOG.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_PLANKS.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_LEAVES.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_LEAVES.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_LEAVES.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_LEAVES.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_LEAVES.get());
                         }
                     })
                     .build());

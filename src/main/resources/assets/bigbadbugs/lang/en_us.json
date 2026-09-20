@@ -6,6 +6,23 @@
 
   "block.bigbadbugs.calamites_log": "Calamites Log",
   "block.bigbadbugs.calamites_planks": "Calamites Planks",
+  "block.bigbadbugs.calamites_leaves": "Calamites Leaves",
+
+  "block.bigbadbugs.cordaites_log": "Cordaites Log",
+  "block.bigbadbugs.cordaites_planks": "Cordaites Planks",
+  "block.bigbadbugs.cordaites_leaves": "Cordaites Leaves",
+
+  "block.bigbadbugs.lepidodendron_log": "Lepidodendron Log",
+  "block.bigbadbugs.lepidodendron_planks": "Lepidodendron Planks",
+  "block.bigbadbugs.lepidodendron_leaves": "Lepidodendron Leves",
+
+  "block.bigbadbugs.psaronius_log": "Psaronius Log",
+  "block.bigbadbugs.psaronius_planks": "Psaronius Planks",
+  "block.bigbadbugs.psaronius_leaves": "Psaronius Leaves",
+
+  "block.bigbadbugs.sigillaria_log": "Sigillaria Log",
+  "block.bigbadbugs.sigillaria_planks": "Sigillaria Planks",
+  "block.bigbadbugs.sigillaria_leaves": "Sigillaria Leaves",
 
   "creativetab.bigbadbugs.fossil_items": "Fossil",
   "creativetab.bigbadbugs.paleozoic": "Paleozic Forrest"

@@ -1,19 +1,20 @@
 package net.idk0_lha0.bigbadbugs;
 
 import com.mojang.logging.LogUtils;
-import net.idk0_lha0.bigbadbugs.block.ModBlock;
+import net.idk0_lha0.bigbadbugs.block.ModFossilBlock;
+import net.idk0_lha0.bigbadbugs.block.ModTreeBlock;
 import net.idk0_lha0.bigbadbugs.item.ModCreativeModTabs;
 import net.idk0_lha0.bigbadbugs.item.ModItems;
-import net.minecraft.world.item.CreativeModeTab;
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.client.renderer.BiomeColors;
+import net.minecraft.world.level.FoliageColor;
 import net.minecraftforge.api.distmarker.Dist;
+import net.minecraftforge.client.event.RegisterColorHandlersEvent;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -33,13 +34,18 @@ public class BigBadBugs
         IEventBus modEventBus = context.getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
+        modEventBus.addListener(this::addCreative);
+
+        modEventBus.addListener(this::registerBlockColors);
+        modEventBus.addListener(this::registerItemColors);
 
         MinecraftForge.EVENT_BUS.register(this);
 
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
-        ModBlock.register(modEventBus);
+        ModFossilBlock.register(modEventBus);
+        ModTreeBlock.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -70,6 +76,42 @@ public class BigBadBugs
     public void onServerStarting(ServerStartingEvent event)
     {
 
+    }
+
+    public BigBadBugs(IEventBus modEventBus) {
+
+        ModTreeBlock.register(modEventBus);
+        ModItems.register(modEventBus);
+
+        // Register the color events
+        modEventBus.addListener(this::registerBlockColors);
+        modEventBus.addListener(this::registerItemColors);
+    }
+
+    private void registerBlockColors(RegisterColorHandlersEvent.Block event) {
+        event.register(
+                (state, level, pos, tintIndex) ->
+                        level != null && pos != null
+                                ? BiomeColors.getAverageFoliageColor(level, pos)
+                                : FoliageColor.getDefaultColor(),
+
+                ModTreeBlock.CALAMITES_LEAVES.get(),
+                ModTreeBlock.SIGILLARIA_LEAVES.get(),
+                ModTreeBlock.PSARONIUS_LEAVES.get(),
+                ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
+                ModTreeBlock.CORDAITES_LEAVES.get()
+        );
+    }
+
+    private void registerItemColors(RegisterColorHandlersEvent.Item event) {
+        event.register(
+                (stack, tintIndex) -> FoliageColor.getDefaultColor(),
+                ModTreeBlock.CALAMITES_LEAVES.get(),
+                ModTreeBlock.SIGILLARIA_LEAVES.get(),
+                ModTreeBlock.PSARONIUS_LEAVES.get(),
+                ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
+                ModTreeBlock.CORDAITES_LEAVES.get()
+        );
     }
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
