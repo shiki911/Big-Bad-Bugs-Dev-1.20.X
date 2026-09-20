@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_calamites_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bigbadbugs:calamites_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigbadbugs:calamites_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_calamites_log",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigbadbugs:calamites_planks"
+    ]
+  },
+  "sends_telemetry_event": false
+}

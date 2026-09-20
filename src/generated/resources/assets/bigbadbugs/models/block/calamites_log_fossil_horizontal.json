@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column_horizontal",
+  "textures": {
+    "end": "bigbadbugs:block/calamites_log_fossil_top",
+    "side": "bigbadbugs:block/calamites_log_fossil"
+  }
+}

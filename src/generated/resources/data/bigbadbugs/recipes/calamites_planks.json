@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "bigbadbugs:calamites_log"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "bigbadbugs:calamites_planks"
+  }
+}

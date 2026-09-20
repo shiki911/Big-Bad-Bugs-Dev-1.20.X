@@ -1,0 +1,5 @@
+// 1.20.1	2026-09-20T11:37:30.8883281	Tags for minecraft:block mod id bigbadbugs
+c4ee2bf8f3acec50ad5d76da001e02788969a019 data/minecraft/tags/blocks/logs.json
+4c0d8ad214a9ae120bfff96b4a36f72c9cd791e3 data/minecraft/tags/blocks/mineable/pickaxe.json
+d1c5b6fe94ae33c75faac3859688a43b4c512572 data/minecraft/tags/blocks/needs_iron_tool.json
+d692310649857f12740907c8716ceb251c982d5c data/minecraft/tags/blocks/planks.json

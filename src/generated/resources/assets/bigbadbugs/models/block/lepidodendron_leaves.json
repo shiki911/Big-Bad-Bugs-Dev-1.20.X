@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/leaves",
+  "textures": {
+    "all": "bigbadbugs:block/lepidodendron_leaves"
+  }
+}
