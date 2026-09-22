@@ -31,8 +31,8 @@ public class ModCreativeModTabs {
                     .build());
 
 
-    public static final RegistryObject<CreativeModeTab> PALEOZOIC = CREATIVE_MOD_TABS.register("paleozioc_tab",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModTreeBlock.CALAMITES_PLANKS.get()))
+    public static final RegistryObject<CreativeModeTab> PALEOZOIC = CREATIVE_MOD_TABS.register("paleozoic_tab",
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModTreeBlock.CALAMITES_SAPLING.get()))
                     .title(Component.translatable("creativetab.bigbadbugs.paleozoic"))
                     .displayItems(new CreativeModeTab.DisplayItemsGenerator() {
                         @Override
@@ -42,6 +42,15 @@ public class ModCreativeModTabs {
                             pOutput.accept(ModTreeBlock.LEPIDODENDRON_LOG.get());
                             pOutput.accept(ModTreeBlock.PSARONIUS_LOG.get());
                             pOutput.accept(ModTreeBlock.SIGILLARIA_LOG.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_LOG.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_WOOD.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_WOOD.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_WOOD.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_WOOD.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_WOOD.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_WOOD.get());
 
 
                             pOutput.accept(ModTreeBlock.CALAMITES_PLANKS.get());
@@ -49,6 +58,15 @@ public class ModCreativeModTabs {
                             pOutput.accept(ModTreeBlock.LEPIDODENDRON_PLANKS.get());
                             pOutput.accept(ModTreeBlock.PSARONIUS_PLANKS.get());
                             pOutput.accept(ModTreeBlock.SIGILLARIA_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_PLANKS.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_SAPLING.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_SAPLING.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_SAPLING.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_SAPLING.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_SAPLING.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_SAPLING.get());
 
 
                             pOutput.accept(ModTreeBlock.CALAMITES_LEAVES.get());
@@ -56,6 +74,7 @@ public class ModCreativeModTabs {
                             pOutput.accept(ModTreeBlock.LEPIDODENDRON_LEAVES.get());
                             pOutput.accept(ModTreeBlock.PSARONIUS_LEAVES.get());
                             pOutput.accept(ModTreeBlock.SIGILLARIA_LEAVES.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_LEAVES.get());
                         }
                     })
                     .build());

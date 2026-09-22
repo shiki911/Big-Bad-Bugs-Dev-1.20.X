@@ -1,5 +1,13 @@
-// 1.20.1	2026-09-20T11:37:30.8883281	Tags for minecraft:block mod id bigbadbugs
-c4ee2bf8f3acec50ad5d76da001e02788969a019 data/minecraft/tags/blocks/logs.json
+// 1.20.1	2026-09-22T19:00:24.0405224	Tags for minecraft:block mod id bigbadbugs
+7b46fd749adbaac44b98e8972a934654a67ae4c6 data/bigbadbugs/tags/blocks/calamites_logs.json
+1fcf94e492b4fba7ba7348cf8abdf0a0dfb87c44 data/bigbadbugs/tags/blocks/cordaites_logs.json
+58154b57abf783150a9bdcb6112ee3d44c3e192b data/bigbadbugs/tags/blocks/lepidodendron_logs.json
+98ca519cd8db013d67ce4b9fe4764f4c56649787 data/bigbadbugs/tags/blocks/medullosa_logs.json
+15e1ca58ce9b8ae7011268162725b1973492917c data/bigbadbugs/tags/blocks/psaronius_logs.json
+3a94d99409abd201042999c63e3b9a40fd496dd6 data/bigbadbugs/tags/blocks/sigillaria_logs.json
+243bae6a0f9e863f212dc8f12d6a489276ff9f36 data/minecraft/tags/blocks/logs.json
+243bae6a0f9e863f212dc8f12d6a489276ff9f36 data/minecraft/tags/blocks/logs_that_burn.json
 4c0d8ad214a9ae120bfff96b4a36f72c9cd791e3 data/minecraft/tags/blocks/mineable/pickaxe.json
 d1c5b6fe94ae33c75faac3859688a43b4c512572 data/minecraft/tags/blocks/needs_iron_tool.json
-d692310649857f12740907c8716ceb251c982d5c data/minecraft/tags/blocks/planks.json
+051b6b1d093f10ad075b26408625a71445b7206a data/minecraft/tags/blocks/planks.json
+828724345abade19dc8420f4b35e7e73d674a3ce data/minecraft/tags/blocks/saplings.json

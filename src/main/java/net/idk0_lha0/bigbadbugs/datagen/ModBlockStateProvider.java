@@ -33,6 +33,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ModTreeBlock.CALAMITES_LOG.get(),
                 models().getExistingFile(modLoc("block/calamites_log"))
         );
+        simpleBlockWithItem(ModTreeBlock.CALAMITES_WOOD.get(),
+                models().cubeAll(
+                        "calamites_wood",
+                        modLoc("block/calamites_log")
+                ));
 
         blockWithItem(ModTreeBlock.CALAMITES_PLANKS);
         simpleBlockWithItem(ModTreeBlock.CALAMITES_LEAVES.get(),
@@ -42,6 +47,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all",
                         modLoc("block/calamites_leaves")
                 ));
+        saplingBlock(ModTreeBlock.CALAMITES_SAPLING);
 
 
         logBlock(((RotatedPillarBlock) ModTreeBlock.CORDAITES_LOG.get()));
@@ -49,6 +55,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ModTreeBlock.CORDAITES_LOG.get(),
                 models().getExistingFile(modLoc("block/cordaites_log"))
         );
+        simpleBlockWithItem(ModTreeBlock.CORDAITES_WOOD.get(),
+                models().cubeAll(
+                        "cordaites_wood",
+                        modLoc("block/cordaites_log")
+                ));
 
         blockWithItem(ModTreeBlock.CORDAITES_PLANKS);
         simpleBlockWithItem(ModTreeBlock.CORDAITES_LEAVES.get(),
@@ -58,6 +69,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all",
                         modLoc("block/cordiates_leaves")
                 ));
+        saplingBlock(ModTreeBlock.CORDAITES_SAPLING);
 
 
         logBlock(((RotatedPillarBlock) ModTreeBlock.LEPIDODENDRON_LOG.get()));
@@ -65,6 +77,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ModTreeBlock.LEPIDODENDRON_LOG.get(),
                 models().getExistingFile(modLoc("block/lepidodendron_log"))
         );
+        simpleBlockWithItem(ModTreeBlock.LEPIDODENDRON_WOOD.get(),
+                models().cubeAll(
+                        "lepidodendron_wood",
+                        modLoc("block/lepidodendron_log")
+                ));
 
         blockWithItem(ModTreeBlock.LEPIDODENDRON_PLANKS);
         simpleBlockWithItem(ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
@@ -74,6 +91,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all",
                         modLoc("block/lepidodendron_leaves")
                 ));
+        saplingBlock(ModTreeBlock.LEPIDODENDRON_SAPLING);
 
 
         logBlock(((RotatedPillarBlock) ModTreeBlock.PSARONIUS_LOG.get()));
@@ -81,6 +99,11 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ModTreeBlock.PSARONIUS_LOG.get(),
                 models().getExistingFile(modLoc("block/psaronius_log"))
         );
+        simpleBlockWithItem(ModTreeBlock.PSARONIUS_WOOD.get(),
+                models().cubeAll(
+                        "psaronius_wood",
+                        modLoc("block/psaronius_log")
+                ));
 
         blockWithItem(ModTreeBlock.PSARONIUS_PLANKS);
         simpleBlockWithItem(ModTreeBlock.PSARONIUS_LEAVES.get(),
@@ -90,12 +113,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all",
                         modLoc("block/psaronius_leaves")
                 ));
+        saplingBlock(ModTreeBlock.PSARONIUS_SAPLING);
 
         logBlock(((RotatedPillarBlock) ModTreeBlock.SIGILLARIA_LOG.get()));
         simpleBlockItem(
                 ModTreeBlock.SIGILLARIA_LOG.get(),
                 models().getExistingFile(modLoc("block/sigillaria_log"))
         );
+        simpleBlockWithItem(ModTreeBlock.SIGILLARIA_WOOD.get(),
+                models().cubeAll(
+                        "sigillaria_wood",
+                        modLoc("block/sigillaria_log")
+                ));
 
         blockWithItem(ModTreeBlock.SIGILLARIA_PLANKS);
         simpleBlockWithItem(ModTreeBlock.SIGILLARIA_LEAVES.get(),
@@ -105,10 +134,39 @@ public class ModBlockStateProvider extends BlockStateProvider {
                         "all",
                         modLoc("block/sigillaria_leaves")
                 ));
+        saplingBlock(ModTreeBlock.SIGILLARIA_SAPLING);
+
+
+        logBlock(((RotatedPillarBlock) ModTreeBlock.MEDULLOSA_LOG.get()));
+        simpleBlockItem(
+                ModTreeBlock.MEDULLOSA_LOG.get(),
+                models().getExistingFile(modLoc("block/medullosa_log"))
+        );
+
+        simpleBlockWithItem(ModTreeBlock.MEDULLOSA_WOOD.get(),
+                models().cubeAll(
+                        "medullosa_wood",
+                        modLoc("block/medullosa_log")
+                ));
+
+        blockWithItem(ModTreeBlock.MEDULLOSA_PLANKS);
+        simpleBlockWithItem(ModTreeBlock.MEDULLOSA_LEAVES.get(),
+                models().singleTexture(
+                        "medullosa_leaves",
+                        mcLoc("block/leaves"),
+                        "all",
+                        modLoc("block/medullosa_leaves")
+                ));
+        saplingBlock(ModTreeBlock.MEDULLOSA_SAPLING);
     }
 
     private void blockWithItem(RegistryObject<Block> block) {
         simpleBlockWithItem(block.get(), cubeAll(block.get()));
+    }
+
+    private void saplingBlock(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 
     private void blockTree(RegistryObject<RotatedPillarBlock> block) {

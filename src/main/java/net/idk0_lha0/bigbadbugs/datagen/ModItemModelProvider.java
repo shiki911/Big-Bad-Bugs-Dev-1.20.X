@@ -1,6 +1,7 @@
 package net.idk0_lha0.bigbadbugs.datagen;
 
 import net.idk0_lha0.bigbadbugs.BigBadBugs;
+import net.idk0_lha0.bigbadbugs.block.ModTreeBlock;
 import net.idk0_lha0.bigbadbugs.item.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,6 +21,19 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         basicItem(ModItems.FOSSIL.get());
+
+        saplingItem(ModTreeBlock.CALAMITES_SAPLING);
+        saplingItem(ModTreeBlock.CORDAITES_SAPLING);
+        saplingItem(ModTreeBlock.LEPIDODENDRON_SAPLING);
+        saplingItem(ModTreeBlock.PSARONIUS_SAPLING);
+        saplingItem(ModTreeBlock.SIGILLARIA_SAPLING);
+        saplingItem(ModTreeBlock.MEDULLOSA_SAPLING);
+    }
+
+    private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(BigBadBugs.MOD_ID,"block/" + item.getId().getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<? extends Block> item) {

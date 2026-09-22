@@ -3,6 +3,7 @@ package net.idk0_lha0.bigbadbugs;
 import com.mojang.logging.LogUtils;
 import net.idk0_lha0.bigbadbugs.block.ModFossilBlock;
 import net.idk0_lha0.bigbadbugs.block.ModTreeBlock;
+import net.idk0_lha0.bigbadbugs.costum.ModFeatures;
 import net.idk0_lha0.bigbadbugs.item.ModCreativeModTabs;
 import net.idk0_lha0.bigbadbugs.item.ModItems;
 import net.minecraft.client.renderer.BiomeColors;
@@ -27,7 +28,7 @@ public class BigBadBugs
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "bigbadbugs";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public BigBadBugs(FMLJavaModLoadingContext context)
     {
@@ -46,6 +47,8 @@ public class BigBadBugs
         ModItems.register(modEventBus);
         ModFossilBlock.register(modEventBus);
         ModTreeBlock.register(modEventBus);
+
+        ModFeatures.FEATURES.register(modEventBus);
 
         modEventBus.addListener(this::addCreative);
     }
@@ -99,7 +102,8 @@ public class BigBadBugs
                 ModTreeBlock.SIGILLARIA_LEAVES.get(),
                 ModTreeBlock.PSARONIUS_LEAVES.get(),
                 ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
-                ModTreeBlock.CORDAITES_LEAVES.get()
+                ModTreeBlock.CORDAITES_LEAVES.get(),
+                ModTreeBlock.MEDULLOSA_LEAVES.get()
         );
     }
 
@@ -110,7 +114,8 @@ public class BigBadBugs
                 ModTreeBlock.SIGILLARIA_LEAVES.get(),
                 ModTreeBlock.PSARONIUS_LEAVES.get(),
                 ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
-                ModTreeBlock.CORDAITES_LEAVES.get()
+                ModTreeBlock.CORDAITES_LEAVES.get(),
+                ModTreeBlock.MEDULLOSA_LEAVES.get()
         );
     }
 

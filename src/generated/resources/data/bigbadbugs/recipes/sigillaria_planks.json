@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "bigbadbugs:sigillaria_log"
+      "tag": "bigbadbugs:sigillaria_logs"
     }
   ],
   "result": {

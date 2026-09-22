@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "bigbadbugs:calamites_log"
+      "tag": "bigbadbugs:calamites_logs"
     }
   ],
   "result": {

@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "bigbadbugs:psaronius_log"
+      "tag": "bigbadbugs:psaronius_logs"
     }
   ],
   "result": {

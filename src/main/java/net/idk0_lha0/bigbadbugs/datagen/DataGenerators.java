@@ -1,20 +1,22 @@
 package net.idk0_lha0.bigbadbugs.datagen;
 
 import net.idk0_lha0.bigbadbugs.BigBadBugs;
+import net.idk0_lha0.bigbadbugs.worldgen.ModWorldGenProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.loot.LootTableProvider;
 import net.minecraft.world.level.storage.loot.parameters.LootContextParamSets;
-import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.common.data.DatapackBuiltinEntriesProvider;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = BigBadBugs.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -39,5 +41,14 @@ public class DataGenerators {
 
         generator.addProvider(event.includeServer(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModBlockStateProvider(packOutput, existingFileHelper));
+
+        generator.addProvider(event.includeServer(),
+                new DatapackBuiltinEntriesProvider(
+                        packOutput,
+                        lookupProvider,
+                        ModWorldGenProvider.BUILDER,
+                        Set.of(BigBadBugs.MOD_ID)
+                )
+        );
     }
 }

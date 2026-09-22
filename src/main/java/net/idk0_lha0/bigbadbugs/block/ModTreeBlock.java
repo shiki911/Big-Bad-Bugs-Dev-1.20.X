@@ -2,18 +2,15 @@ package net.idk0_lha0.bigbadbugs.block;
 
 import net.idk0_lha0.bigbadbugs.BigBadBugs;
 import net.idk0_lha0.bigbadbugs.block.costum.ModFlammableLeaves;
-import net.idk0_lha0.bigbadbugs.block.costum.ModFlammablePlanks;
+import net.idk0_lha0.bigbadbugs.block.costum.ModFlammableBlocks;
 import net.idk0_lha0.bigbadbugs.block.costum.ModFlammableRotatedPillarBlock;
 import net.idk0_lha0.bigbadbugs.item.ModItems;
-import net.minecraft.core.BlockPos;
-import net.minecraft.core.Direction;
+import net.idk0_lha0.bigbadbugs.worldgen.tree.ModTreeGrowers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockBehaviour;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -30,13 +27,18 @@ public class ModTreeBlock {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> CALAMITES_WOOD = registerBlock("calamites_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
     public static final RegistryObject<Block> CALAMITES_PLANKS = registerBlock("calamites_planks",
-            () -> new ModFlammablePlanks(BlockBehaviour.Properties.of()
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CALAMITES_LEAVES = registerBlock("calamites_leaves",
-            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noLootTable()));
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
+    public static final RegistryObject<Block> CALAMITES_SAPLING = registerBlock("calamites_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.CALAMITES, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
     // Cordaites related blocks
@@ -44,13 +46,18 @@ public class ModTreeBlock {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> CORDAITES_WOOD = registerBlock("cordaites_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
     public static final RegistryObject<Block> CORDAITES_PLANKS = registerBlock("cordaites_planks",
-            () -> new ModFlammablePlanks(BlockBehaviour.Properties.of()
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> CORDAITES_LEAVES = registerBlock("cordaites_leaves",
-            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noLootTable()));
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
+    public static final RegistryObject<Block> CORDAITES_SAPLING = registerBlock("cordaites_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.CORDAITES, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
     // Lepidodendron related blocks
@@ -58,13 +65,18 @@ public class ModTreeBlock {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> LEPIDODENDRON_WOOD = registerBlock("lepidodendron_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
     public static final RegistryObject<Block> LEPIDODENDRON_PLANKS = registerBlock("lepidodendron_planks",
-            () -> new ModFlammablePlanks(BlockBehaviour.Properties.of()
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> LEPIDODENDRON_LEAVES = registerBlock("lepidodendron_leaves",
-            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noLootTable()));
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
+    public static final RegistryObject<Block> LEPIDODENDRON_SAPLING = registerBlock("lepidodendron_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.LEPIDODENDRON, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
     // Psaronius related blocks
@@ -72,25 +84,54 @@ public class ModTreeBlock {
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> PSARONIUS_WOOD = registerBlock("psaronius_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
     public static final RegistryObject<Block> PSARONIUS_PLANKS = registerBlock("psaronius_planks",
-            () -> new ModFlammablePlanks(BlockBehaviour.Properties.of()
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> PSARONIUS_LEAVES = registerBlock("psaronius_leaves",
-            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noLootTable()));
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
+    public static final RegistryObject<Block> PSARONIUS_SAPLING = registerBlock("psaronius_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.PSARONIUS, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     // Sigillaria related blocks
     public static final RegistryObject<Block> SIGILLARIA_LOG = registerBlock("sigillaria_log",
             () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)
                     .strength(1f).sound(SoundType.WOOD)));
 
+    public static final RegistryObject<Block> SIGILLARIA_WOOD = registerBlock("sigillaria_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
     public static final RegistryObject<Block> SIGILLARIA_PLANKS = registerBlock("sigillaria_planks",
-            () -> new ModFlammablePlanks(BlockBehaviour.Properties.of()
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.of()
                     .strength(1f).sound(SoundType.WOOD)));
 
     public static final RegistryObject<Block> SIGILLARIA_LEAVES = registerBlock("sigillaria_leaves",
-            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES).noLootTable()));
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> SIGILLARIA_SAPLING = registerBlock("sigillaria_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.SIGILLARIA, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+
+    // Medullosa related blocks
+    public static final RegistryObject<Block> MEDULLOSA_LOG = registerBlock("medullosa_log",
+            () -> new ModFlammableRotatedPillarBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> MEDULLOSA_WOOD = registerBlock("medullosa_wood",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> MEDULLOSA_PLANKS = registerBlock("medullosa_planks",
+            () -> new ModFlammableBlocks(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+    public static final RegistryObject<Block> MEDULLOSA_LEAVES = registerBlock("medullosa_leaves",
+            () -> new ModFlammableLeaves(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
+
+    public static final RegistryObject<Block> MEDULLOSA_SAPLING = registerBlock("medullosa_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.MEDULLOSA, BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
 
 

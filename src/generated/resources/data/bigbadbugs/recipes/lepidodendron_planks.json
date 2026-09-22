@@ -3,7 +3,7 @@
   "category": "building",
   "ingredients": [
     {
-      "item": "bigbadbugs:lepidodendron_log"
+      "tag": "bigbadbugs:lepidodendron_logs"
     }
   ],
   "result": {
