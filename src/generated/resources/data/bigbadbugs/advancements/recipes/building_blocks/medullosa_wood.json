@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_medullosa_logs": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "bigbadbugs:medullosa_log"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "bigbadbugs:medullosa_wood"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_medullosa_logs",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "bigbadbugs:medullosa_wood"
+    ]
+  },
+  "sends_telemetry_event": false
+}

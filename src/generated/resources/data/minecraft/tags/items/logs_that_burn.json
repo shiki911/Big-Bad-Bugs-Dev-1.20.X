@@ -1,0 +1,16 @@
+{
+  "values": [
+    "bigbadbugs:calamites_log",
+    "bigbadbugs:cordaites_log",
+    "bigbadbugs:lepidodendron_log",
+    "bigbadbugs:psaronius_log",
+    "bigbadbugs:sigillaria_log",
+    "bigbadbugs:medullosa_log",
+    "bigbadbugs:calamites_wood",
+    "bigbadbugs:cordaites_wood",
+    "bigbadbugs:lepidodendron_wood",
+    "bigbadbugs:psaronius_wood",
+    "bigbadbugs:sigillaria_wood",
+    "bigbadbugs:medullosa_wood"
+  ]
+}

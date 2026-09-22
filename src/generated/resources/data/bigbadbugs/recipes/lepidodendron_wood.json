@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "A": {
+      "item": "bigbadbugs:lepidodendron_log"
+    }
+  },
+  "pattern": [
+    "AA",
+    "AA"
+  ],
+  "result": {
+    "count": 3,
+    "item": "bigbadbugs:lepidodendron_wood"
+  },
+  "show_notification": true
+}
