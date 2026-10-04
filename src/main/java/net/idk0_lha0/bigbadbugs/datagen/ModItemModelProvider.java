@@ -28,12 +28,38 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModTreeBlock.PSARONIUS_SAPLING);
         saplingItem(ModTreeBlock.SIGILLARIA_SAPLING);
         saplingItem(ModTreeBlock.MEDULLOSA_SAPLING);
+
+        buttonItem(ModTreeBlock.CALAMITES_BUTTON, ModTreeBlock.CALAMITES_PLANKS);
+        buttonItem(ModTreeBlock.CORDAITES_BUTTON, ModTreeBlock.CORDAITES_PLANKS);
+        buttonItem(ModTreeBlock.LEPIDODENDRON_BUTTON, ModTreeBlock.LEPIDODENDRON_PLANKS);
+        buttonItem(ModTreeBlock.PSARONIUS_BUTTON, ModTreeBlock.PSARONIUS_PLANKS);
+        buttonItem(ModTreeBlock.SIGILLARIA_BUTTON, ModTreeBlock.SIGILLARIA_PLANKS);
+        buttonItem(ModTreeBlock.MEDULLOSA_BUTTON, ModTreeBlock.MEDULLOSA_PLANKS);
+
+        fenceItem(ModTreeBlock.CALAMITES_FENCE, ModTreeBlock.CALAMITES_PLANKS);
+        fenceItem(ModTreeBlock.CORDAITES_FENCE, ModTreeBlock.CORDAITES_PLANKS);
+        fenceItem(ModTreeBlock.LEPIDODENDRON_FENCE, ModTreeBlock.LEPIDODENDRON_PLANKS);
+        fenceItem(ModTreeBlock.PSARONIUS_FENCE, ModTreeBlock.PSARONIUS_PLANKS);
+        fenceItem(ModTreeBlock.SIGILLARIA_FENCE, ModTreeBlock.SIGILLARIA_PLANKS);
+        fenceItem(ModTreeBlock.MEDULLOSA_FENCE, ModTreeBlock.MEDULLOSA_PLANKS);
     }
 
     private ItemModelBuilder saplingItem(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.parse("item/generated")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(BigBadBugs.MOD_ID,"block/" + item.getId().getPath()));
+    }
+
+    private void buttonItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),mcLoc("block/button_inventory"))
+                .texture("texture", ResourceLocation.fromNamespaceAndPath(BigBadBugs.MOD_ID,
+                        "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    }
+
+    private void fenceItem(RegistryObject<? extends Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),mcLoc("block/fence_inventory"))
+                .texture("texture", ResourceLocation.fromNamespaceAndPath(BigBadBugs.MOD_ID,
+                        "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
     private ItemModelBuilder simpleBlockItem(RegistryObject<? extends Block> item) {

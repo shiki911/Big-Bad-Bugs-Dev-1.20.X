@@ -40,6 +40,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.CALAMITES_PLANKS);
+        stairsBlock(ModTreeBlock.CALAMITES_STAIRS.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+        slabBlock(ModTreeBlock.CALAMITES_SLAB.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+        buttonBlock(ModTreeBlock.CALAMITES_BUTTON.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.CALAMITES_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+        fenceBlock(ModTreeBlock.CALAMITES_FENCE.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.CALAMITES_FENCE_GATE.get(), blockTexture(ModTreeBlock.CALAMITES_PLANKS.get()));
+
+        blockItem(ModTreeBlock.CALAMITES_STAIRS);
+        blockItem(ModTreeBlock.CALAMITES_SLAB);
+        blockItem(ModTreeBlock.CALAMITES_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.CALAMITES_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.CALAMITES_LEAVES.get(),
                 models().singleTexture(
                         "calamites_leaves",
@@ -62,6 +74,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.CORDAITES_PLANKS);
+        stairsBlock(ModTreeBlock.CORDAITES_STAIRS.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+        slabBlock(ModTreeBlock.CORDAITES_SLAB.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+        buttonBlock(ModTreeBlock.CORDAITES_BUTTON.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.CORDAITES_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+        fenceBlock(ModTreeBlock.CORDAITES_FENCE.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.CORDAITES_FENCE_GATE.get(), blockTexture(ModTreeBlock.CORDAITES_PLANKS.get()));
+
+        blockItem(ModTreeBlock.CORDAITES_STAIRS);
+        blockItem(ModTreeBlock.CORDAITES_SLAB);
+        blockItem(ModTreeBlock.CORDAITES_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.CORDAITES_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.CORDAITES_LEAVES.get(),
                 models().singleTexture(
                         "cordaites_leaves",
@@ -84,6 +108,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.LEPIDODENDRON_PLANKS);
+        stairsBlock(ModTreeBlock.LEPIDODENDRON_STAIRS.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+        slabBlock(ModTreeBlock.LEPIDODENDRON_SLAB.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+        buttonBlock(ModTreeBlock.LEPIDODENDRON_BUTTON.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.LEPIDODENDRON_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+        fenceBlock(ModTreeBlock.LEPIDODENDRON_FENCE.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.LEPIDODENDRON_FENCE_GATE.get(), blockTexture(ModTreeBlock.LEPIDODENDRON_PLANKS.get()));
+
+        blockItem(ModTreeBlock.LEPIDODENDRON_STAIRS);
+        blockItem(ModTreeBlock.LEPIDODENDRON_SLAB);
+        blockItem(ModTreeBlock.LEPIDODENDRON_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.LEPIDODENDRON_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.LEPIDODENDRON_LEAVES.get(),
                 models().singleTexture(
                         "lepidodendron_leaves",
@@ -106,6 +142,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.PSARONIUS_PLANKS);
+        stairsBlock(ModTreeBlock.PSARONIUS_STAIRS.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+        slabBlock(ModTreeBlock.PSARONIUS_SLAB.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+        buttonBlock(ModTreeBlock.PSARONIUS_BUTTON.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.PSARONIUS_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+        fenceBlock(ModTreeBlock.PSARONIUS_FENCE.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.PSARONIUS_FENCE_GATE.get(), blockTexture(ModTreeBlock.PSARONIUS_PLANKS.get()));
+
+        blockItem(ModTreeBlock.PSARONIUS_STAIRS);
+        blockItem(ModTreeBlock.PSARONIUS_SLAB);
+        blockItem(ModTreeBlock.PSARONIUS_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.PSARONIUS_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.PSARONIUS_LEAVES.get(),
                 models().singleTexture(
                         "psaronius_leaves",
@@ -127,6 +175,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.SIGILLARIA_PLANKS);
+        stairsBlock(ModTreeBlock.SIGILLARIA_STAIRS.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+        slabBlock(ModTreeBlock.SIGILLARIA_SLAB.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+        buttonBlock(ModTreeBlock.SIGILLARIA_BUTTON.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.SIGILLARIA_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+        fenceBlock(ModTreeBlock.SIGILLARIA_FENCE.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.SIGILLARIA_FENCE_GATE.get(), blockTexture(ModTreeBlock.SIGILLARIA_PLANKS.get()));
+
+        blockItem(ModTreeBlock.SIGILLARIA_STAIRS);
+        blockItem(ModTreeBlock.SIGILLARIA_SLAB);
+        blockItem(ModTreeBlock.SIGILLARIA_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.SIGILLARIA_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.SIGILLARIA_LEAVES.get(),
                 models().singleTexture(
                         "sigillaria_leaves",
@@ -150,6 +210,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
                 ));
 
         blockWithItem(ModTreeBlock.MEDULLOSA_PLANKS);
+        stairsBlock(ModTreeBlock.MEDULLOSA_STAIRS.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+        slabBlock(ModTreeBlock.MEDULLOSA_SLAB.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+        buttonBlock(ModTreeBlock.MEDULLOSA_BUTTON.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+        pressurePlateBlock(ModTreeBlock.MEDULLOSA_PRESSURE_PLATE.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+        fenceBlock(ModTreeBlock.MEDULLOSA_FENCE.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+        fenceGateBlock(ModTreeBlock.MEDULLOSA_FENCE_GATE.get(), blockTexture(ModTreeBlock.MEDULLOSA_PLANKS.get()));
+
+        blockItem(ModTreeBlock.MEDULLOSA_STAIRS);
+        blockItem(ModTreeBlock.MEDULLOSA_SLAB);
+        blockItem(ModTreeBlock.MEDULLOSA_PRESSURE_PLATE);
+        blockItem(ModTreeBlock.MEDULLOSA_FENCE_GATE);
+
         simpleBlockWithItem(ModTreeBlock.MEDULLOSA_LEAVES.get(),
                 models().singleTexture(
                         "medullosa_leaves",
@@ -178,12 +250,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("bigbadbugs:block/" +
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("bigbadbugs:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
     }
 
     private void blockItem(RegistryObject<? extends Block> blockRegistryObject, String appendix) {
-        simpleBlockWithItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("bigbadbugs:block/" +
+        simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("bigbadbugs:block/" +
                 ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()) + appendix));
     }
 }

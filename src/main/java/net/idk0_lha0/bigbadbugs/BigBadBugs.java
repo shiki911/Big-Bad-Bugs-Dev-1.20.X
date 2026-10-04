@@ -28,7 +28,7 @@ public class BigBadBugs
     // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "bigbadbugs";
     // Directly reference a slf4j logger
-    public static final Logger LOGGER = LogUtils.getLogger();
+    private static final Logger LOGGER = LogUtils.getLogger();
 
     public BigBadBugs(FMLJavaModLoadingContext context)
     {

@@ -10,6 +10,8 @@ import net.minecraft.world.level.levelgen.structure.templatesystem.BlockIgnorePr
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructurePlaceSettings;
 import net.minecraft.world.level.levelgen.structure.templatesystem.StructureTemplate;
 
+import java.util.Objects;
+
 
 public class StructureTreeFeature extends Feature<NoneFeatureConfiguration> {
 
@@ -18,54 +20,36 @@ public class StructureTreeFeature extends Feature<NoneFeatureConfiguration> {
 
     public StructureTreeFeature(String structureName, BlockPos offset) {
         super(NoneFeatureConfiguration.CODEC);
+        /* NeoForge
         this.structureId = ResourceLocation.fromNamespaceAndPath(
                 BigBadBugs.MOD_ID, structureName);
+        this.offset = offset;
+         */
+        //ForgeOptifine
+        this.structureId = ResourceLocation.tryBuild(BigBadBugs.MOD_ID,structureName);
         this.offset = offset;
     }
 
     @Override
     public boolean place(FeaturePlaceContext<NoneFeatureConfiguration> context) {
-        try {
+        var manager = context.level().getLevel().getStructureManager();
 
-            BigBadBugs.LOGGER.info("A");
+        StructureTemplate template = manager.get(structureId).orElse(null);
 
-            var manager = context.level().getLevel().getStructureManager();
-            BigBadBugs.LOGGER.info("B");
+        StructurePlaceSettings settings = new StructurePlaceSettings()
+                .setIgnoreEntities(true)
+                .addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK)
+                .addProcessor(BlockIgnoreProcessor.AIR)
+                .addProcessor(new ModLeavesProcessor());
 
-            StructureTemplate template = manager.get(structureId).orElse(null);
-            BigBadBugs.LOGGER.info("C");
+        BlockPos pos = context.origin().offset(offset);
 
-            if (template == null) {
-                BigBadBugs.LOGGER.error("Couldn't find structure {}", structureId);
-                return false;
-            }
+        context.level().removeBlock(context.origin(), false);
 
-            BigBadBugs.LOGGER.info("Size: {}", template.getSize());
+        boolean placed = template.placeInWorld(
+                context.level(), pos, pos, settings, context.random(), 2
+        );
 
-            StructurePlaceSettings settings = new StructurePlaceSettings()
-                    .setIgnoreEntities(true)
-                    .addProcessor(BlockIgnoreProcessor.STRUCTURE_BLOCK)
-                    .addProcessor(BlockIgnoreProcessor.AIR);
-            BigBadBugs.LOGGER.info("E");
-
-            BlockPos pos = context.origin().offset(offset);
-            BigBadBugs.LOGGER.info("F");
-
-            context.level().removeBlock(context.origin(), false);
-
-            BigBadBugs.LOGGER.info("Origin: {}", context.origin());
-            BigBadBugs.LOGGER.info("Paste : {}", pos);
-            BigBadBugs.LOGGER.info("Size: {}", template.getSize());
-
-            boolean placed = template.placeInWorld(
-                    context.level(), pos, pos, settings, context.random(), 2
-            );
-
-            BigBadBugs.LOGGER.info("G: " + placed);
-            return placed;
-        } catch (Exception e){
-            BigBadBugs.LOGGER.error("Failed to place " + this.structureId, e);
-            return false;
-        }
+        return placed;
     }
 }

@@ -34,6 +34,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.CALAMITES_LOG.get());
         this.dropSelf(ModTreeBlock.CALAMITES_WOOD.get());
         this.dropSelf(ModTreeBlock.CALAMITES_PLANKS.get());
+        this.dropSelf(ModTreeBlock.CALAMITES_STAIRS.get());
+        this.add(ModTreeBlock.CALAMITES_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.CALAMITES_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.CALAMITES_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.CALAMITES_BUTTON.get());
+        this.dropSelf(ModTreeBlock.CALAMITES_FENCE.get());
+        this.dropSelf(ModTreeBlock.CALAMITES_FENCE_GATE.get());
+
         this.add(ModTreeBlock.CALAMITES_LEAVES.get(), block ->
                 createLeavesDrops(block, ModTreeBlock.CALAMITES_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
 
@@ -42,6 +51,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.LEPIDODENDRON_LOG.get());
         this.dropSelf(ModTreeBlock.LEPIDODENDRON_WOOD.get());
         this.dropSelf(ModTreeBlock.LEPIDODENDRON_PLANKS.get());
+        this.dropSelf(ModTreeBlock.LEPIDODENDRON_STAIRS.get());
+        this.add(ModTreeBlock.LEPIDODENDRON_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.LEPIDODENDRON_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.LEPIDODENDRON_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.LEPIDODENDRON_BUTTON.get());
+        this.dropSelf(ModTreeBlock.LEPIDODENDRON_FENCE.get());
+        this.dropSelf(ModTreeBlock.LEPIDODENDRON_FENCE_GATE.get());
+
         this.add(ModTreeBlock.LEPIDODENDRON_LEAVES.get(),  block ->
                 createLeavesDrops(block,ModTreeBlock.LEPIDODENDRON_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModTreeBlock.LEPIDODENDRON_SAPLING.get());
@@ -49,6 +67,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.CORDAITES_LOG.get());
         this.dropSelf(ModTreeBlock.CORDAITES_WOOD.get());
         this.dropSelf(ModTreeBlock.CORDAITES_PLANKS.get());
+        this.dropSelf(ModTreeBlock.CORDAITES_STAIRS.get());
+        this.add(ModTreeBlock.CORDAITES_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.CORDAITES_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.CORDAITES_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.CORDAITES_BUTTON.get());
+        this.dropSelf(ModTreeBlock.CORDAITES_FENCE.get());
+        this.dropSelf(ModTreeBlock.CORDAITES_FENCE_GATE.get());
+
         this.add(ModTreeBlock.CORDAITES_LEAVES.get(), block ->
                 createLeavesDrops(block,ModTreeBlock.CORDAITES_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModTreeBlock.CORDAITES_SAPLING.get());
@@ -56,6 +83,16 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.PSARONIUS_LOG.get());
         this.dropSelf(ModTreeBlock.PSARONIUS_WOOD.get());
         this.dropSelf(ModTreeBlock.PSARONIUS_PLANKS.get());
+        this.dropSelf(ModTreeBlock.PSARONIUS_STAIRS.get());
+        this.add(ModTreeBlock.PSARONIUS_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.PSARONIUS_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.PSARONIUS_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.PSARONIUS_BUTTON.get());
+        this.dropSelf(ModTreeBlock.PSARONIUS_FENCE.get());
+        this.dropSelf(ModTreeBlock.PSARONIUS_FENCE_GATE.get());
+
+
         this.add(ModTreeBlock.PSARONIUS_LEAVES.get(), block ->
                 createLeavesDrops(block,ModTreeBlock.PSARONIUS_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModTreeBlock.PSARONIUS_SAPLING.get());
@@ -63,6 +100,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.SIGILLARIA_LOG.get());
         this.dropSelf(ModTreeBlock.SIGILLARIA_WOOD.get());
         this.dropSelf(ModTreeBlock.SIGILLARIA_PLANKS.get());
+        this.dropSelf(ModTreeBlock.SIGILLARIA_STAIRS.get());
+        this.add(ModTreeBlock.SIGILLARIA_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.SIGILLARIA_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.SIGILLARIA_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.SIGILLARIA_BUTTON.get());
+        this.dropSelf(ModTreeBlock.SIGILLARIA_FENCE.get());
+        this.dropSelf(ModTreeBlock.SIGILLARIA_FENCE_GATE.get());
+
         this.add(ModTreeBlock.SIGILLARIA_LEAVES.get(), block ->
                 createLeavesDrops(block,ModTreeBlock.SIGILLARIA_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModTreeBlock.SIGILLARIA_SAPLING.get());
@@ -70,6 +116,15 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         this.dropSelf(ModTreeBlock.MEDULLOSA_LOG.get());
         this.dropSelf(ModTreeBlock.MEDULLOSA_WOOD.get());
         this.dropSelf(ModTreeBlock.MEDULLOSA_PLANKS.get());
+        this.dropSelf(ModTreeBlock.MEDULLOSA_STAIRS.get());
+        this.add(ModTreeBlock.MEDULLOSA_SLAB.get(),
+                block -> createSlabItemTable(ModTreeBlock.MEDULLOSA_SLAB.get()));
+
+        this.dropSelf(ModTreeBlock.MEDULLOSA_PRESSURE_PLATE.get());
+        this.dropSelf(ModTreeBlock.MEDULLOSA_BUTTON.get());
+        this.dropSelf(ModTreeBlock.MEDULLOSA_FENCE.get());
+        this.dropSelf(ModTreeBlock.MEDULLOSA_FENCE_GATE.get());
+
         this.add(ModTreeBlock.MEDULLOSA_LEAVES.get(), block ->
                 createLeavesDrops(block,ModTreeBlock.MEDULLOSA_SAPLING.get(),NORMAL_LEAVES_SAPLING_CHANCES));
         this.dropSelf(ModTreeBlock.MEDULLOSA_SAPLING.get());

@@ -1,8 +1,20 @@
-// 1.20.1	2026-09-22T18:47:11.0491924	Item Models: bigbadbugs
+// 1.20.1	2026-09-25T17:44:26.0071343	Item Models: bigbadbugs
+1d3741093d5597283786952cf9973f583acd382e assets/bigbadbugs/models/item/calamites_button.json
+1a4fafc1781cecffb8055362ad6bf6b95c273f30 assets/bigbadbugs/models/item/calamites_fence.json
 87fae0705e83d45c9670714c8b8e08632b2a50cd assets/bigbadbugs/models/item/calamites_sapling.json
+6f4edfc9f2b9fe3fcba4ea4b52d57ba24e70e465 assets/bigbadbugs/models/item/cordaites_button.json
+001314954d9520ed12b345b62c5046f40b03d7aa assets/bigbadbugs/models/item/cordaites_fence.json
 672e9b06d33363b19e379d9331b351cd5e743ca1 assets/bigbadbugs/models/item/cordaites_sapling.json
 b1ffa2d1228ad4bf53962f1b5adf6e67319c8ca5 assets/bigbadbugs/models/item/fossil.json
+7b075ce6535735a1150d00b5dc5d7e2802ffec87 assets/bigbadbugs/models/item/lepidodendron_button.json
+44dec38dba454e63ce6d73b3481e520d7454b53e assets/bigbadbugs/models/item/lepidodendron_fence.json
 31de9c5003807b97d6071bcfd7ed8a6298ea1732 assets/bigbadbugs/models/item/lepidodendron_sapling.json
+3ca912e0b868b9f04ed9d16463652326bd2ffbf1 assets/bigbadbugs/models/item/medullosa_button.json
+5526009d400b7bb5c4b9f0d5ec8e7b2fcde95d22 assets/bigbadbugs/models/item/medullosa_fence.json
 c582cb2758cc144f78c07b0ea153727487728ccc assets/bigbadbugs/models/item/medullosa_sapling.json
+5eee1ffcafd7b056e39ea16ceee6aefb53551485 assets/bigbadbugs/models/item/psaronius_button.json
+5f8fec6d533ae62be45338b00778563dbff1264f assets/bigbadbugs/models/item/psaronius_fence.json
 c20ea7050e365cc9d86ef24cb446371719c03e9b assets/bigbadbugs/models/item/psaronius_sapling.json
+9fc08bbd30c4303fbe3666ef1902306ce6569c42 assets/bigbadbugs/models/item/sigillaria_button.json
+77e37ed21cef14733b1aab4c9616d2724c5493f9 assets/bigbadbugs/models/item/sigillaria_fence.json
 8ce708ea5ff0c5660dea0d5139b664f239e823d5 assets/bigbadbugs/models/item/sigillaria_sapling.json

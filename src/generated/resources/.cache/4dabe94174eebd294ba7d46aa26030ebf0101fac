@@ -1,4 +1,4 @@
-// 1.20.1	2026-09-22T19:00:24.0445118	Tags for minecraft:item mod id bigbadbugs
+// 1.20.1	2026-09-25T18:54:05.726072	Tags for minecraft:item mod id bigbadbugs
 7b46fd749adbaac44b98e8972a934654a67ae4c6 data/bigbadbugs/tags/items/calamites_logs.json
 1fcf94e492b4fba7ba7348cf8abdf0a0dfb87c44 data/bigbadbugs/tags/items/cordaites_logs.json
 58154b57abf783150a9bdcb6112ee3d44c3e192b data/bigbadbugs/tags/items/lepidodendron_logs.json
@@ -9,3 +9,6 @@
 243bae6a0f9e863f212dc8f12d6a489276ff9f36 data/minecraft/tags/items/logs_that_burn.json
 49e435f3eeee28f860c68f53f28a0ef0f710b0f8 data/minecraft/tags/items/planks.json
 a312f8c293cab5bfc0bf0f541bcc8dc9a6a8078c data/minecraft/tags/items/saplings.json
+80b5b63f4214cfffd3e8870e5e44d1b815027962 data/minecraft/tags/items/wooden_fences.json
+fbb511136929143d6c5a7925619a213d3c699b9a data/minecraft/tags/items/wooden_slabs.json
+127589d34951d16d2435464fea9a7ff3c512d734 data/minecraft/tags/items/wooden_stairs.json

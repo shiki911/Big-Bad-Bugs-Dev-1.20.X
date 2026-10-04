@@ -8,6 +8,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -83,6 +84,30 @@ public class ModItemTagsProvider extends ItemTagsProvider {
                 .add(ModTreeBlock.LEPIDODENDRON_PLANKS.get().asItem())
                 .add(ModTreeBlock.PSARONIUS_PLANKS.get().asItem())
                 .add(ModTreeBlock.MEDULLOSA_PLANKS.get().asItem());
+
+        tag(ItemTags.WOODEN_SLABS)
+                .add(ModTreeBlock.CALAMITES_SLAB.get().asItem())
+                .add(ModTreeBlock.CORDAITES_SLAB.get().asItem())
+                .add(ModTreeBlock.LEPIDODENDRON_SLAB.get().asItem())
+                .add(ModTreeBlock.PSARONIUS_SLAB.get().asItem())
+                .add(ModTreeBlock.SIGILLARIA_SLAB.get().asItem())
+                .add(ModTreeBlock.MEDULLOSA_SLAB.get().asItem());
+
+        tag(ItemTags.WOODEN_STAIRS)
+                .add(ModTreeBlock.CALAMITES_STAIRS.get().asItem())
+                .add(ModTreeBlock.CORDAITES_STAIRS.get().asItem())
+                .add(ModTreeBlock.LEPIDODENDRON_STAIRS.get().asItem())
+                .add(ModTreeBlock.PSARONIUS_STAIRS.get().asItem())
+                .add(ModTreeBlock.SIGILLARIA_STAIRS.get().asItem())
+                .add(ModTreeBlock.MEDULLOSA_STAIRS.get().asItem());
+
+        tag(ItemTags.WOODEN_FENCES)
+                .add(ModTreeBlock.CALAMITES_FENCE.get().asItem())
+                .add(ModTreeBlock.CORDAITES_FENCE.get().asItem())
+                .add(ModTreeBlock.LEPIDODENDRON_FENCE.get().asItem())
+                .add(ModTreeBlock.PSARONIUS_FENCE.get().asItem())
+                .add(ModTreeBlock.SIGILLARIA_FENCE.get().asItem())
+                .add(ModTreeBlock.MEDULLOSA_FENCE.get().asItem());
 
         tag(ItemTags.SAPLINGS)
                 .add(ModTreeBlock.CALAMITES_SAPLING.get().asItem())

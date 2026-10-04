@@ -53,14 +53,6 @@ public class ModCreativeModTabs {
                             pOutput.accept(ModTreeBlock.MEDULLOSA_WOOD.get());
 
 
-                            pOutput.accept(ModTreeBlock.CALAMITES_PLANKS.get());
-                            pOutput.accept(ModTreeBlock.CORDAITES_PLANKS.get());
-                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_PLANKS.get());
-                            pOutput.accept(ModTreeBlock.PSARONIUS_PLANKS.get());
-                            pOutput.accept(ModTreeBlock.SIGILLARIA_PLANKS.get());
-                            pOutput.accept(ModTreeBlock.MEDULLOSA_PLANKS.get());
-
-
                             pOutput.accept(ModTreeBlock.CALAMITES_SAPLING.get());
                             pOutput.accept(ModTreeBlock.CORDAITES_SAPLING.get());
                             pOutput.accept(ModTreeBlock.LEPIDODENDRON_SAPLING.get());
@@ -75,6 +67,58 @@ public class ModCreativeModTabs {
                             pOutput.accept(ModTreeBlock.PSARONIUS_LEAVES.get());
                             pOutput.accept(ModTreeBlock.SIGILLARIA_LEAVES.get());
                             pOutput.accept(ModTreeBlock.MEDULLOSA_LEAVES.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_PLANKS.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_PLANKS.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_SLAB.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_SLAB.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_SLAB.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_SLAB.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_SLAB.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_SLAB.get());
+
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_STAIRS.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_STAIRS.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_STAIRS.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_STAIRS.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_STAIRS.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_STAIRS.get());
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_BUTTON.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_BUTTON.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_BUTTON.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_BUTTON.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_BUTTON.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_BUTTON.get());
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_PRESSURE_PLATE.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_PRESSURE_PLATE.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_PRESSURE_PLATE.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_PRESSURE_PLATE.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_PRESSURE_PLATE.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_PRESSURE_PLATE.get());
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_FENCE.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_FENCE.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_FENCE.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_FENCE.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_FENCE.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_FENCE.get());
+
+                            pOutput.accept(ModTreeBlock.CALAMITES_FENCE_GATE.get());
+                            pOutput.accept(ModTreeBlock.CORDAITES_FENCE_GATE.get());
+                            pOutput.accept(ModTreeBlock.LEPIDODENDRON_FENCE_GATE.get());
+                            pOutput.accept(ModTreeBlock.PSARONIUS_FENCE_GATE.get());
+                            pOutput.accept(ModTreeBlock.SIGILLARIA_FENCE_GATE.get());
+                            pOutput.accept(ModTreeBlock.MEDULLOSA_FENCE_GATE.get());
                         }
                     })
                     .build());

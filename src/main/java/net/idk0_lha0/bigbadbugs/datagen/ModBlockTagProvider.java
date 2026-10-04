@@ -92,6 +92,46 @@ public class ModBlockTagProvider extends BlockTagsProvider {
                 .add(ModTreeBlock.SIGILLARIA_PLANKS.get())
                 .add(ModTreeBlock.MEDULLOSA_PLANKS.get());
 
+        this.tag(BlockTags.SLABS)
+                .add(ModTreeBlock.CALAMITES_SLAB.get())
+                .add(ModTreeBlock.CORDAITES_SLAB.get())
+                .add(ModTreeBlock.LEPIDODENDRON_SLAB.get())
+                .add(ModTreeBlock.PSARONIUS_SLAB.get())
+                .add(ModTreeBlock.SIGILLARIA_SLAB.get())
+                .add(ModTreeBlock.MEDULLOSA_SLAB.get());
+
+        this.tag(BlockTags.PRESSURE_PLATES)
+                .add(ModTreeBlock.CALAMITES_PRESSURE_PLATE.get())
+                .add(ModTreeBlock.CORDAITES_PRESSURE_PLATE.get())
+                .add(ModTreeBlock.LEPIDODENDRON_PRESSURE_PLATE.get())
+                .add(ModTreeBlock.PSARONIUS_PRESSURE_PLATE.get())
+                .add(ModTreeBlock.SIGILLARIA_PRESSURE_PLATE.get())
+                .add(ModTreeBlock.MEDULLOSA_PRESSURE_PLATE.get());
+
+        this.tag(BlockTags.BUTTONS)
+                .add(ModTreeBlock.CALAMITES_BUTTON.get())
+                .add(ModTreeBlock.CORDAITES_BUTTON.get())
+                .add(ModTreeBlock.LEPIDODENDRON_BUTTON.get())
+                .add(ModTreeBlock.PSARONIUS_BUTTON.get())
+                .add(ModTreeBlock.SIGILLARIA_BUTTON.get())
+                .add(ModTreeBlock.MEDULLOSA_BUTTON.get());
+
+        this.tag(BlockTags.WOODEN_FENCES)
+                .add(ModTreeBlock.CALAMITES_FENCE.get())
+                .add(ModTreeBlock.CORDAITES_FENCE.get())
+                .add(ModTreeBlock.LEPIDODENDRON_FENCE.get())
+                .add(ModTreeBlock.PSARONIUS_FENCE.get())
+                .add(ModTreeBlock.SIGILLARIA_FENCE.get())
+                .add(ModTreeBlock.MEDULLOSA_FENCE.get());
+
+        this.tag(BlockTags.FENCE_GATES)
+                .add(ModTreeBlock.CALAMITES_FENCE_GATE.get())
+                .add(ModTreeBlock.CORDAITES_FENCE_GATE.get())
+                .add(ModTreeBlock.LEPIDODENDRON_FENCE_GATE.get())
+                .add(ModTreeBlock.PSARONIUS_FENCE_GATE.get())
+                .add(ModTreeBlock.SIGILLARIA_FENCE_GATE.get())
+                .add(ModTreeBlock.MEDULLOSA_FENCE_GATE.get());
+
         this.tag(BlockTags.SAPLINGS)
                 .add(ModTreeBlock.CALAMITES_SAPLING.get())
                 .add(ModTreeBlock.CORDAITES_SAPLING.get())
