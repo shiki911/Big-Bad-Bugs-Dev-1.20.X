@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigbadbugs:block/calamites_slab"
+    },
+    "type=double": {
+      "model": "bigbadbugs:block/calamites_planks"
+    },
+    "type=top": {
+      "model": "bigbadbugs:block/calamites_slab_top"
+    }
+  }
+}

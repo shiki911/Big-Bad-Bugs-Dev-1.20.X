@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "bigbadbugs:block/psaronius_planks",
+    "side": "bigbadbugs:block/psaronius_planks",
+    "top": "bigbadbugs:block/psaronius_planks"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigbadbugs:block/cordaites_slab"
+    },
+    "type=double": {
+      "model": "bigbadbugs:block/cordaites_planks"
+    },
+    "type=top": {
+      "model": "bigbadbugs:block/cordaites_slab_top"
+    }
+  }
+}

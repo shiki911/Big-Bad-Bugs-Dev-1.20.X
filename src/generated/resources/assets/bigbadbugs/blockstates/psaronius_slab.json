@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigbadbugs:block/psaronius_slab"
+    },
+    "type=double": {
+      "model": "bigbadbugs:block/psaronius_planks"
+    },
+    "type=top": {
+      "model": "bigbadbugs:block/psaronius_slab_top"
+    }
+  }
+}

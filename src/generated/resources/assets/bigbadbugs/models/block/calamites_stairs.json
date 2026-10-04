@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/stairs",
+  "textures": {
+    "bottom": "bigbadbugs:block/calamites_planks",
+    "side": "bigbadbugs:block/calamites_planks",
+    "top": "bigbadbugs:block/calamites_planks"
+  }
+}

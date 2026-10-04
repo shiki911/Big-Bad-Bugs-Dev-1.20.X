@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigbadbugs:block/medullosa_slab"
+    },
+    "type=double": {
+      "model": "bigbadbugs:block/medullosa_planks"
+    },
+    "type=top": {
+      "model": "bigbadbugs:block/medullosa_slab_top"
+    }
+  }
+}

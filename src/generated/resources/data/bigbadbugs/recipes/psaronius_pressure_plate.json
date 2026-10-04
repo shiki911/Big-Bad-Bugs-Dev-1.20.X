@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "bigbadbugs:psaronius_planks"
+    }
+  },
+  "pattern": [
+    "AA"
+  ],
+  "result": {
+    "item": "bigbadbugs:psaronius_pressure_plate"
+  },
+  "show_notification": true
+}

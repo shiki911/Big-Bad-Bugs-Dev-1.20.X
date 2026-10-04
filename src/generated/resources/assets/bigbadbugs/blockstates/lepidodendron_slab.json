@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "bigbadbugs:block/lepidodendron_slab"
+    },
+    "type=double": {
+      "model": "bigbadbugs:block/lepidodendron_planks"
+    },
+    "type=top": {
+      "model": "bigbadbugs:block/lepidodendron_slab_top"
+    }
+  }
+}
